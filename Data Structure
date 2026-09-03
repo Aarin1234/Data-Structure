@@ -1,0 +1,22 @@
+'''Fibonacci Series:
+    0, 1, 1, 2, 3, 5, 8, 13, 21...'''
+def fibonacci(n):
+    if n ==0 or n==1:
+        return n
+    else:
+        return fibonacci(n-1) + fibonacci(n-2)
+
+print('Fibonacci: ')
+print(fibonacci(3)) #to calculate the third fibonacci number
+print(fibonacci(5)) #to calculate the fifth fibonacci number
+#---------------------
+
+print("\nFunction to calculate the factorial of any number")
+def factorial(n):
+    if n==1:
+        return 1
+    else:
+        return n*factorial(n-1)
+
+print("\nFactorial :")
+print(factorial(5))
