@@ -1,0 +1,9 @@
+def sumOfNumberN(n):
+    if n==1 or n==0:
+        return n    
+    else:
+        return n + sumOfNumberN(n-1)
+
+
+print("\n \n Sum of numbers:")
+print(sumOfNumberN(8))
