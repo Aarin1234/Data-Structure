@@ -1,0 +1,13 @@
+def power(x, y):
+    if y==0:
+        return 1
+    else:
+        if y%2 == 0:
+            return(power(x, y//2))*power(x, y//2)
+        else:
+            return (x* power(x,y//2) * power(x, y//2))
+
+
+x = int(input("please enter the base: "))
+y = int(input("now enter the power: "))
+print("result = ", power(x, y))
