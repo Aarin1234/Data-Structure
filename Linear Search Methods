@@ -1,0 +1,16 @@
+arr = list(map(int, input("Enter the numbers - ").split()))
+print("Linear Search")
+key = int(input('enter the item to search:'))
+#Method -1 
+print("\n method 1:")
+if key in arr:
+    print(f'Key Exist at index {arr.index(key)}')
+#--------------------
+#Method 2
+print('\n method 2:')
+for i in range(0, len(arr)):
+    if arr[i] == key:
+        print(f'Key Exist at index {i}')
+        break
+    else:
+        print('Key does not exist')
