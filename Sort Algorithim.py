@@ -24,5 +24,5 @@ print(f'Original mylist = {mylist2}')
 for i in range(len(mylist2)):
     for j in range(0, len(mylist2)-i-1):
         if mylist2[j] > mylist2[j+1]:
-            mylist2[j], mylist[j+1] = mylist2[j+1], mylist2[j]
+            mylist2[j], mylist2[j+1] = mylist2[j+1], mylist2[j]
 print(f'Sorted list in (Ascending order = {mylist2})')
